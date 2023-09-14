@@ -1,0 +1,1 @@
+(Get-ChildItem Cert:\CurrentUser\My | Where-Object { $_.Extensions.format(1) -like "*#######*"}).FriendlyName = "#######"
